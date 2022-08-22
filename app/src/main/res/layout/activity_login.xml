@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.dell.fireapp.LoginActivity">
+
+    <include
+        android:id="@+id/loginAppbar"
+        layout="@layout/appbar_layout" />
+
+    <TextView
+        android:text="@string/log_in_your_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginAppbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/login_info"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:textColor="@color/colorBlack" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_info"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/login_email_text">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="E-mail "
+            android:inputType="textEmailAddress"
+            android:id="@+id/login_email" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_email_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:id="@+id/login_password_text">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:id="@+id/login_password" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password_text"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/log_in"
+        android:textColor="@color/colorwhite"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/colorPrimaryDark"
+
+        android:id="@+id/login_btn" />
+
+
+</RelativeLayout>

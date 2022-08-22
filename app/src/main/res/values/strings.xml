@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">FireApp</string>
+    <string name="create_a_new_account">Create a New Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password..</string>
+    <string name="welcome_to_lapichat_chatapp">Welcome to Lapichat chatApp</string>
+    <string name="log_in_your_account">Log in your Account</string>
+    <string name="log_in">Log In</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="change_image">Change Image</string>
+    <string name="change_status">change Status</string>
+    <string name="status_of_the_user">Status of the user</string>
+    <string name="cancel_friend_request">Cancel Friend Request</string>
+
+
+</resources>

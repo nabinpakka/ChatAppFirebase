@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_settings"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:background="@color/colorPrimary"
+
+    tools:context="com.example.dell.fireapp.SettingsActivity">
+
+    <include layout="@layout/appbar_layout" android:id="@+id/setting_appbar" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@+id/setting_appbar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@mipmap/ic_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/setting_image"/>
+    
+
+
+
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="@string/status_of_the_user"
+
+        android:layout_below="@+id/userName_text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/user_status_text"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/setting_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+       android:layout_centerHorizontal="true"
+        android:id="@+id/userName_text"
+        android:textColor="@android:color/white"
+        android:textStyle="normal|bold"
+        android:textAlignment="center"
+        android:textSize="20sp"
+         />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/change_status_btn"
+        android:text="@string/change_status"
+
+
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@color/colorwhite" />
+
+
+    <Button
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/change_image_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_image"
+
+        android:backgroundTint="@color/colorwhite"
+        android:textColor="@color/colorBlack"
+        android:layout_above="@+id/change_status_btn"
+         />
+
+</RelativeLayout>

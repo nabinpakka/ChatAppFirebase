@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_status_update"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.dell.fireapp.StatusUpdateActivity">
+
+    <include
+        android:id="@+id/status_toobar"
+        layout="@layout/appbar_layout" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_toobar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:id="@+id/status_change_text"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="change status" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:text="Update Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status_change_text"
+        android:layout_alignEnd="@+id/status_change_text"
+        android:layout_marginTop="20dp"
+        android:id="@+id/update_status_btn"
+        android:background="@drawable/button_bg"
+        android:backgroundTint="@color/colorAccent"
+        android:theme="@style/Base.ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp" />
+
+
+</RelativeLayout>
